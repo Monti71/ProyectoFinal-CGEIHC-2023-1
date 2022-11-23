@@ -1,4 +1,4 @@
-﻿/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 /* ---------------- Proyecto ---------------------------------*/
 /*----------------- 2023-1 ----------------------------------*/
 /*----------------- Equipo: 3 ------------------------------*/
@@ -262,12 +262,12 @@ int main()
 
     vector<std::string> faces
     {
-        "resources/skybox/right.jpg",
-        "resources/skybox/left.jpg",
-        "resources/skybox/top.jpg",
-        "resources/skybox/bottom.jpg",
-        "resources/skybox/front.jpg",
-        "resources/skybox/back.jpg"
+        "resources/skybox/proy/+z.jpg", //bien
+        "resources/skybox/proy/-z.jpg",
+        "resources/skybox/proy/+y.jpg", //bien
+        "resources/skybox/proy/-y.jpg", //bien
+        "resources/skybox/proy/-x.jpg", //bien
+        "resources/skybox/proy/+x.jpg"
     };
 
     Skybox skybox = Skybox(faces);
@@ -427,7 +427,7 @@ int main()
 
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f));
-        model = glm::scale(model, glm::vec3(0.2f));
+        model = glm::scale(model, glm::vec3(1.0f));
         staticShader.setMat4("model", model);
         piso.Draw(staticShader);
 
