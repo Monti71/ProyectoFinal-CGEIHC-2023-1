@@ -281,6 +281,11 @@ int main()
   
 
     Model piso("resources/objects/piso/piso.obj");
+    Model casaCalamar("resources/ObjetosA/CasaCalamar/CasaCalamar.obj");
+    //Model cofre("resources/ObjetosA/Chest/Cofre.obj");
+    Model delfin("resources/ObjetosA/Delfin/delfin.obj");  //Este ya está separado, recordar agregarr sus partes
+    //Model donCangrejo("resources/ObjetosA/MrKrabs/cangrejo.obj");   //Este ya está separado, recordar agregarr sus partes
+
 
     //ModelAnim animacionPersonaje("resources/objects/Personaje1/PersonajeBrazo.dae");
     //animacionPersonaje.initShaders(animShader.ID);
@@ -431,6 +436,32 @@ int main()
         staticShader.setMat4("model", model);
         piso.Draw(staticShader);
 
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(100.0f, 155.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(0.01f));
+        staticShader.setMat4("model", model);
+        casaCalamar.Draw(staticShader);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(25.0f, 0.0f, 40.0f));
+        model = glm::scale(model, glm::vec3(1.0f));
+        staticShader.setMat4("model", model);
+        //cofre.Draw(staticShader);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(35.0f, 30.75f, -20.0f));
+        model = glm::scale(model, glm::vec3(1.0f));
+        staticShader.setMat4("model", model);
+        delfin.Draw(staticShader);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(-100.0f, 0.0f, 70.0f));
+        model = glm::scale(model, glm::vec3(1.0f));
+        staticShader.setMat4("model", model);
+        //donCangrejo.Draw(staticShader);
+
+
+
         // -------------------------------------------------------------------------------------------------------------------------
         // Personaje
         // -------------------------------------------------------------------------------------------------------------------------
@@ -482,13 +513,13 @@ void my_input(GLFWwindow* window, int key, int scancode, int action, int mode)
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.ProcessKeyboard(FORWARD, (float)deltaTime + 15.0f);
+        camera.ProcessKeyboard(FORWARD, (float)deltaTime + 35.0f);
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.ProcessKeyboard(BACKWARD, (float)deltaTime + 15.0f);
+        camera.ProcessKeyboard(BACKWARD, (float)deltaTime + 35.0f);
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.ProcessKeyboard(LEFT, (float)deltaTime + 15.0f);
+        camera.ProcessKeyboard(LEFT, (float)deltaTime + 35.0f);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.ProcessKeyboard(RIGHT, (float)deltaTime + 15.0f);
+        camera.ProcessKeyboard(RIGHT, (float)deltaTime + 35.0f);
     //To Configure Model
     if (glfwGetKey(window, GLFW_KEY_Y) == GLFW_PRESS)
         posZ++;
