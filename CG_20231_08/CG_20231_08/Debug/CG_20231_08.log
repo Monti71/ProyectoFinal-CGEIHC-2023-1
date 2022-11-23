@@ -1,0 +1,13 @@
+﻿  Proyecto.cpp
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\include\shader_m.h(44,40): warning C4101: 'e': variable local sin referencia
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\include\modelAnim.h(104,44): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\include\modelAnim.h(520,24): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(153,21): warning C4305: '+=': truncamiento de 'double' a 'float'
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(569,17): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(570,17): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(574,19): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(575,19): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(577,13): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(578,13): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\CG_20231_08\Proyecto.cpp(586,31): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  CG_20231_08.vcxproj -> D:\Users\Monti\Desktop\Ingenieria en Computacion\Semestre 2023-1\Computación Gráfica\Proyecto\CG_20231_08\Debug\CG_20231_08.exe
