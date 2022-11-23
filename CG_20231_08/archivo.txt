@@ -1,0 +1,1 @@
+Agregamos la carpeta principal en la que estarán todos los archivos del proyecto.
